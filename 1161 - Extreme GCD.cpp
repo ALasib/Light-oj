@@ -15,7 +15,7 @@ void ncr()
       dp[0]=dp[1]=dp[2]=dp[3]=0;
       dp[4]=1;
       for(int i=5;i<mx;i++)
-         dp[i]=dp[i-1]*i/(i-4);
+         dp[i]=i*(i-1)*(i-2)*(i-3)/24ll;
 }
  
 int main()
